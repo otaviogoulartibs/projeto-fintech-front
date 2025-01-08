@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/Miniatura.png" type="image/x-icon">
+    <title>Perfil</title>
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- link awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!-- link google fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+
+    <!-- link css header e footer -->
+    <link rel="stylesheet" href="../CSS/header_footer.css">
+
+    <!-- link css perfil -->
+    <link rel="stylesheet" href="../CSS/stylePerfil.css">
+</head>
+<body>
+        <!-- começo header -->
+        <nav class="navbar fixed-top cabeçalho">
+            <div class="container-fluid header">
+                <!-- conteúdo da esquerda -->
+                <div class="esquerda">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <img src="../Imagens/Icones/Menu.png" width="80%" class="img-fluid">
+                    </button>
+    
+                    <!-- começo offcanvas -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbar">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Midas Fingold</h5>
+                            <button type="button" class="btn-close fechar" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+    
+                        <div class="linha-horizontal"></div>
+    
+                        <!-- conteúdo offcanvas -->
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <i class="bi bi-house-fill"></i>
+                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item perfil">
+                                    <i class="bi bi-person-circle"></i>
+                                    <a class="nav-link" href="#">Perfil</a>
+                                </li>
+                                <!-- menu dropdown -->
+                                <li class="nav-item dropdown">
+                                    <i class="bi bi-cash-stack"></i>
+                                    <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Finanças >
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item my-3" href="../Paginas/Ganhos.html">Ganhos</a></li>
+                                        <li>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../Paginas/Gastos.html">Gastos</a></li>
+                                    </ul>
+                                </li>
+                                <!-- fim menu dropdown -->
+    
+                                <li class="nav-item calendario">
+                                    <i class="bi bi-calendar3"></i>
+                                    <a class="nav-link" href="#">Calendário</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <i class="bi bi-bullseye"></i>
+                                    <a class="nav-link" href="#">Objetivos</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <i class="bi bi-piggy-bank-fill"></i>
+                                    <a class="nav-link" href="../Paginas/investimento.html">Investimentos</a>
+                                </li>
+    
+                                <li class="nav-item notificacoes">
+                                    <i class="bi bi-bell-fill"></i>
+                                    <a class="nav-link" href="#">Notificações</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- fim offcanvas -->
+                    <div class="logo mx-4">
+                        <img src="../Imagens/Logo/FinGold branco sem fundo 1 (1).png" width="80%" class="img-fluid">
+                    </div>
+                </div>
+                <!-- fim conteúdo da esquerda -->
+    
+                <!-- conteúdo da direita -->
+                <div class="direita px-3">
+                    <div class="icones mx-4">
+                        <i class="bi bi-calendar3"></i>
+                    </div>
+                    <div class="icones2 mx-4">
+                        <i class="bi bi-bell-fill"></i>
+                    </div>
+                    <div class="icones3 mx-1 text-center">
+                        <i class="bi bi-person-circle mx-3"></i>
+                        <h5>Perfil</h5>
+                    </div>
+                </div>
+                <!-- fim conteúdo da direita -->
+            </div>
+        </nav>
+        <!-- fim header -->
+
+    <section class="container boas-vindas">
+        <div class="boas-vindas-textos">
+            <h1>Olá, usuário!</h1>
+            <p>Seja bem-vindo ao seu perfil pessoal.</p>
+        </div>
+        <div class="boas-vindas-imagem">
+            <img src="../Imagens/Vetores/perfil-usuario.svg" class="img-fluid">
+        </div>
+    </section>
+
+    <div class="container">
+        <h3 class="h3-info-cadastro">Informações de cadastro</h3>
+    </div>
+    <section class="container info-cadastro">
+        <div class="informacoes">
+            <!-- nome completo -->
+            <div class="mb-3">
+                <label for="nomeCompleto" class="form-label label-nome-completo">Nome completo</label>
+                <input type="text" class="form-control placeholder-nome-completo" id="nomeCompleto" placeholder="Ex: Ana Silva" disabled>
+            </div>
+            <!-- email -->
+            <div class="mb-3">
+                <label for="emailCadastro" class="form-label label-email">Email</label>
+                <input type="email" class="form-control placeholder-email" id="emailCadastro" placeholder="Ex: anasilva04@gmail.com" disabled>
+            </div>
+        </div>
+        <div class="informacoes">
+            <div class="mb-3">
+                <!-- data de nascimento -->
+                <label for="data-nasc-cadastro" class="form-label label-data-nasc">Data de nascimento</label>
+                <input type="date" class="form-control data-nasc" id="data-nasc-cadastro" disabled>
+            </div>
+            <!-- senha -->
+            <label for="senhaCadastro" class="form-label label-senha">Senha</label>
+            <input type="password" id="senhaCadastro" class="form-control senha" aria-describedby="passwordHelpBlock" disabled>
+        </div>
+        <div class="informacoes">
+            <select class="form-select genero" aria-label="Default select example" id="generoCadastro" disabled>
+                <option selected disabled>Gênero</option>
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+                <option value="3">Prefiro não dizer</option>
+            </select>
+            <!-- modal -->
+            <button type="button" class="btn botao-editar-informacoes" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar informações <i class="fa-regular fa-pen-to-square icon-editar-informacoes"></i></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Editar informações de cadastro</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <form id="modalForm">
+                                <div class="mb-3">
+                                    <label for="nomeCompletoModal" class="form-label label-nome-completo">Nome completo</label>
+                                    <input type="text" class="form-control placeholder-nome-completo" id="nomeCompletoModal" placeholder="Ex: Ana Silva">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailModal" class="form-label label-email">Email</label>
+                                    <input type="email" class="form-control placeholder-email" id="emailModal" placeholder="Ex: anasilva04@gmail.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="data-nasc-modal" class="form-label label-data-nasc">Data de nascimento</label>
+                                    <input type="date" class="form-control data-nasc" id="data-nasc-modal">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="senhaModal" class="form-label label-senha">Senha</label>
+                                    <input type="password" id="senhaModal" class="form-control senha" aria-describedby="passwordHelpBlock">
+                                </div>
+                                <label for="generoModal" class="form-label label-genero">Gênero</label>
+                                <select class="form-select genero" aria-label="Default select example" id="generoModal">
+                                    <option selected disabled>Gênero</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Feminino</option>
+                                    <option value="3">Prefiro não dizer</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary botao-modal">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- início footer -->
+    <footer class="footer">
+        <div class="container-fluid container_footer ">
+            <div class="row ">
+                <!-- primeira coluna - logo e redes sociais  -->
+                <div class="col-12 col-sm-6 col-md-6 order-1 col-lg-3 primeira_col">
+                    <img src="../Imagens/Logo/Miniatura.png" widht="20" height="90">
+
+                    <div class="redes_sociais">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- fim primeira coluna -->
+
+                <!-- segunda coluna - lista 1 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 order-2">
+                    <ul class="footer-lista">
+                        <li>
+                            <h3>Início</h3>
+                        </li>
+                        <li>
+                            <a href="" class="footer-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="../Paginas/perfil.html" class="footer-link">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="../Paginas/Objetivos.html" class="footer-link">Objetivos</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fim segunda coluna - lista 1 -->
+
+                <!-- terceira coluna - lista 2 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 order-3">
+                    <ul class="footer-lista">
+                        <li>
+                            <h3>Finanças</h3>
+                        </li>
+                        <li>
+                            <a href="../Paginas/Gastos.html" class="footer-link">Gastos</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-link">Calendário</a>
+                        </li>
+                        <li>
+                            <a href="../Paginas/investimento.html" class="footer-link">Investimentos</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- fim terceira coluna - lista 2 -->
+
+                <!-- quarta coluna - se cadastre -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 order-4">
+                    <div class="footer_cadastro">
+                        <h3>Utilize o MIDAS</h3>
+                        <div class="botao2">
+                            <a href="">
+                                <button>Cadastre-se</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fim quarta coluna - se cadastre -->
+
+        <!-- copyright -->
+        <div class="copyright container-fluid">
+            &#169
+            2024 Midas Fingold
+        </div>
+        <!-- fim copyright -->
+    </footer>
+    <!-- fim footer -->
+
+    <script src="../JavaScript/perfil.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
