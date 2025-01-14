@@ -35,6 +35,11 @@
     transition: all 0.4s;
 }
 
+.icone-calendario, .icone-perfil {
+    color: var(--dourado);
+    text-decoration: none;
+}
+
 .icones3{
     display: flex;
     align-items: center;
