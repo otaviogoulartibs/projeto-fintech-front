@@ -1,4 +1,4 @@
-# Midas-Fingold-rm558884
+# Midas-Fingold
 
 # Descrição
 O Midas FinGold é uma fintech inovadora para gestão financeira, permitindo que você controle seus ganhos, gastos, metas e investimentos de maneira eficiente. Além disso, oferece um calendário interativo que facilita a comparação entre ganhos e gastos, permitindo visualizar seu nível de satisfação diário.
